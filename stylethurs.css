@@ -1,0 +1,25 @@
+div {
+	width: 100px;
+	height: 100px;
+	animation: squaretoblowup 1s alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes squaretoblowup {
+	0%{background: cyan;}
+	10%{background: salmon;}
+	15%{background: yellow;}
+	20%{background: red;}
+	30%{background: lime;}
+	40%{background: silver;}
+	50%{background: orange;
+		transform: translate(100px,100px) rotate3d(5,0,3,540deg) scale(2,2);
+		}
+	75%{background: black;
+		transform: translate(750px) rotate(270deg);
+		border-radius: 50%;
+		}
+	100%{background: tomato;
+		transform: translate(200px, 100px) rotate(20deg) scale(2,2)
+	}
+}
